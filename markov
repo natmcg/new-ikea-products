@@ -8,6 +8,6 @@ class SentencesByChar(markovify.Text):
         return list(sentence)
     def word_join(self, words):
         return "".join(words)
- gen_a_char = SentencesByChar(text_a, state_size=1)
- print(gen_a_char.make_sentence(test_output=False).replace("\n", " "))
+gen_a_char = SentencesByChar(text_a, state_size=1)
+print(gen_a_char.make_sentence(test_output=False).replace("\n", " "))
  
